@@ -5,6 +5,14 @@ class Artist
   def self.all
     @@all
   end
+
+  def self.find_by_name(name)
+    @@all.find{|a| a.name == name}
+    
+
+    end
+    
+  end
   
   def save
     @@all << self
