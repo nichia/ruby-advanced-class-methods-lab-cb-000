@@ -6,7 +6,7 @@
 
 class Artist
   extend Findable::ClassMethods # => create class methods
-  
+
   include Findable::InstanceMethods # => create instatnce methods
 
   attr_accessor :name #=> What methods were added?
