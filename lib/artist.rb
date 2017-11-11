@@ -2,11 +2,15 @@ class Artist
   attr_accessor :name #=> What methods were added?
   @@all = []
 
+  def self.all
+    @@all
+  end
+  
   def save
     @@all << self
   end
 
-  
+
 end
 
 #taylor = Artst.new
