@@ -5,9 +5,9 @@
 # 5. Don't use ! methods, like collect! or uniq!
 
 class Artist
-  extend Findable::ClassMethods
+  extend Findable::ClassMethods # => create class methods
   
-  include Findable::InstanceMethods
+  include Findable::InstanceMethods # => create instatnce methods
 
   attr_accessor :name #=> What methods were added?
   @@all = []
