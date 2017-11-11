@@ -1,13 +1,17 @@
 module Findable
 
-  def find_by_name # => Class Method
-    puts "I'm a module method"
+  module ClassMethods
+    def find_by_name # => Class Method
+      puts "I'm a module method"
+    end
   end
 
-  def sing # => Instance method
-    puts "I'mmm singing"
+  module InstanceMethods
+    def sing # => Instance method
+      puts "I'mmm singing"
+    end
   end
-  
+
   attr_accessor :name #=> What methods were added?
   @@all = []
 
