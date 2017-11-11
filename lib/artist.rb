@@ -1,3 +1,9 @@
+# 1. Indent your code correctly.
+# 2. Use descriptive variable names, no xs, no ys, no thing
+# 3. Don't use the return keyword. Ever. It isn't needed.
+# 4. especially don't use return in loops.
+# 5. Don't use ! methods, like collect! or uniq!
+
 class Artist
   attr_accessor :name #=> What methods were added?
   @@all = []
@@ -7,8 +13,10 @@ class Artist
   end
 
   def self.exists
-  end
-  
+    @@any.any? { |a| a.name == name}
+  end # => true or false
+
+
 
   def self.find_by_name(name)
     # match = nil
