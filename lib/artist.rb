@@ -7,7 +7,7 @@ class Artist
   end
 
   def self.find_by_name(name)
-    # match = nil 
+    # match = nil
     #
     # @@all.each do |artist|
     #   if artist.name == name
@@ -15,7 +15,7 @@ class Artist
     #   end
     # end
     # match
-    
+
     @@all.find{|a| a.name == name}
   end
 
