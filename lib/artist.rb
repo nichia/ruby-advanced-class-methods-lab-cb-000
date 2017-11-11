@@ -16,8 +16,6 @@ class Artist
     @@any.any? { |a| a.name == name}
   end # => true or false
 
-
-
   def self.find_by_name(name)
     # match = nil
     #
@@ -27,15 +25,12 @@ class Artist
     #   end
     # end
     # match
-
     @@all.find{|a| a.name == name}
   end
 
   def save
     @@all << self
   end
-
-
 end
 
 #taylor = Artst.new
