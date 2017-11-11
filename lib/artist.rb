@@ -6,7 +6,7 @@
 
 class Artist
   extend Findable
-  
+
   attr_accessor :name #=> What methods were added?
   @@all = []
 
