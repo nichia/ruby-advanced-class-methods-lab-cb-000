@@ -8,12 +8,8 @@ class Artist
 
   def self.find_by_name(name)
     @@all.find{|a| a.name == name}
-    
-
-    end
-    
   end
-  
+
   def save
     @@all << self
   end
